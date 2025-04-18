@@ -1,0 +1,116 @@
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+  }
+  
+  .navbar-brand {
+    color: #000000 !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+  }
+/* Make image 50% smaller */
+.small-image {
+    max-width: 80%;
+    height: auto;
+  }
+  
+/* Image wrapper for styling */
+.hover-image-wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Image with smooth zoom transition */
+  .hover-image {
+    transition: transform 0.5s ease;
+    transform: scale(1); /* Normal size by default */
+  }
+  
+  /* Zoom in on hover */
+  .hover-image-wrapper:hover .hover-image {
+    transform: scale(1.1);
+  }
+  
+  /* Text block style */
+  .text-block h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    color: #17202A;
+    margin-bottom: 20px;
+  }
+  
+  .text-block p {
+    font-size: 1.25rem; /* Larger paragraph */
+    line-height: 1.8;
+    color: #17202A;
+  }
+
+  /* Text block styling */
+.text-block h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .text-block p {
+    font-size: 1.2rem;
+  }
+  
+  /* CTA button styling */
+  .btn-cta {
+    background-color: #08c9f3;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-cta:hover {
+    background-color: #06a9cc;
+    transform: scale(1.05);
+  }
+  
+  /* Image wrapper for hover effect */
+  .hover-image-wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Image zoom effect */
+  .hover-image {
+    transition: transform 0.5s ease;
+    transform: scale(1);
+  }
+  
+  .hover-image-wrapper:hover .hover-image {
+    transform: scale(1.1);
+  }
+
+  /* Scale image to 70% width */
+.medium-image {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .image-right-padding {
+    padding-right: 100px; /* Adjust as needed */
+  }
+  
