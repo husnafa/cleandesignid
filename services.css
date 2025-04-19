@@ -1,0 +1,87 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero {
+    background-color: #7dc7cb; /* Set hero section color to #7dc7cb */
+    color: #fff;
+  }
+  
+  .cta {
+    background-color: #7dc7cb;
+  }
+  
+  .cta .btn-light {
+    background-color: #ffffff;
+    color: #7dc7cb;
+    border: 2px solid #7dc7cb;
+  }
+  
+  .cta .btn-light:hover {
+    background-color: #7dc7cb;
+    color: #ffffff;
+  }
+  
+  footer {
+    background-color: #000;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }
+  
+  footer a:hover {
+    color: #7dc7cb;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+/* CTA Section Theme */
+.cta-section {
+    background-color: #7dc7cb;
+  }
+  
+
+  .service-card {
+    border: 2px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(125, 199, 203, 0.4);
+    border-color: #7dc7cb;
+  }
+  
+  .service-card .card-title {
+    color: #7dc7cb;
+    font-weight: 600;
+  }
+  
+  .service-card .card-text {
+    color: #333;
+  }
+  .btn-black {
+    background-color: #ae3737;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-black:hover {
+    background-color: #7dc7cb;
+    color: #000;
+  }
+  

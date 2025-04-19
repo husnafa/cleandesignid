@@ -1,3 +1,19 @@
+.btn-outline-custom-teal {
+  color: #7dc7cb;
+  background-color: transparent;
+  border: 1.5px solid #7dc7cb;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom-teal:hover,
+.btn-outline-custom-teal:focus {
+  background-color: #7dc7cb;
+  color: #ffffff;
+  border-color: #7dc7cb;
+}
+
+
+
 /* ---------------- Base & Typography ---------------- */
 body {
   margin: 0;
@@ -7,7 +23,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
-  color: #000;
+  color: #ffffff;
 }
 p {
   margin-bottom: 1rem;
@@ -82,19 +98,19 @@ p {
   background: #7dc7cb;
 }
 .btn-web:hover {
-  background: #5aa9ab;
+  background: #495be6;
 }
 .btn-seo {
-  background: #17202a;
+  background:  #7dc7cb;
 }
 .btn-seo:hover {
-  background: #0f161c;
+  background: #495be6;
 }
 .btn-marketing {
-  background: #000;
+  background:  #7dc7cb;
 }
 .btn-marketing:hover {
-  background: #333;
+  background: #495be6;
 }
 
 /* ---------------- About Preview ---------------- */
@@ -118,7 +134,7 @@ p {
   transition: background 0.3s;
 }
 .btn-about:hover {
-  background: #5aa9ab;
+  background:#495be6;
 }
 
 /* ---------------- Testimonials Feedback ---------------- */
@@ -156,30 +172,88 @@ p {
 
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
-  background: #f5f7f8;
-  padding: 2rem 0;
+  background: #7dc7cb;
+  padding: 1rem 0; /* Reduced padding to make the footer height smaller (50% smaller) */
 }
+
 .footer-primary h5 {
-  color: #000;
+  color: #000000;
   margin-bottom: 0.75rem;
 }
+
 .footer-logo {
   width: 80px;
   margin-bottom: 1rem;
 }
+
 .footer-link {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   margin: 0.25rem 0;
   transition: color 0.3s;
 }
+
 .footer-link:hover {
   color: #7dc7cb;
 }
+
 
 /* -------- Override Bootstrap Color Utils -------- */
 .bg-white, .bg-light, .btn-primary, .btn-success, .btn-dark {
   background: none !important;
   color: inherit !important;
+}
+
+.hero-homepage {
+  position: relative;
+  min-height: 100vh;
+  background: url('design.jpg') no-repeat center center / cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero-homepage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay to improve text readability */
+  z-index: 1;
+}
+
+.hero-homepage .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-homepage {
+  position: relative;
+  background: url('design.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  
+}
+
+.hero-homepage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-dark overlay for text visibility */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1,
+.hero-text p,
+.hero-text a {
+  color: white !important;
 }
