@@ -12,29 +12,51 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-main shadow-sm">
   <div class="container">
+    <img src="logo.jpg" alt="Logo" style="height: 30px;"></a>
     <a class="navbar-brand fw-bold" href="index.html">Clean Design Indonesia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero py-5 text-center text-white animate__animated animate__fadeIn">
-  <div class="container">
-    <h1 class="display-4 fw-bold text-black">Our Services</h1>
-    <p class="lead text-black">Affordable Web Design & SEO Solutions for Small Businesses in Indonesia</p>
+  <!-- Your content above -->
 
+  <!-- JavaScript for active navbar link -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('.navbar-nav .nav-link');
+      const currentPage = location.pathname.split("/").pop();
+
+      links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- Hero Section HTML -->
+<section class="hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>Affordable Web Design & SEO Solutions for Small Businesses in Indonesia</p>
   </div>
 </section>
 
@@ -46,6 +68,8 @@
 <section class="py-5 animate__animated animate__fadeInUp">
   <div class="container">
     <div class="row g-4">
+      <h1 class="text-center fw-bold mb-3">Why Choose Us</h1>
+      <div class="row g-4">
 
       <!-- Service Card -->
       <div class="col-md-4" data-bs-toggle="tooltip" title="Modern and responsive web design">
@@ -111,7 +135,6 @@
     </div>
   </div>
 </section>
-
 
 
 <!-- Call to Action -->

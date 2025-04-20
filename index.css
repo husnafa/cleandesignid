@@ -1,7 +1,7 @@
 .btn-outline-custom-teal {
   color: #7dc7cb;
-  background-color: transparent;
-  border: 1.5px solid #7dc7cb;
+  background-color: #042729 ;
+  border: 1.5px solid #042729;
   transition: all 0.3s ease;
 }
 
@@ -12,8 +12,6 @@
   border-color: #7dc7cb;
 }
 
-
-
 /* ---------------- Base & Typography ---------------- */
 body {
   margin: 0;
@@ -23,7 +21,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #000000;
 }
 p {
   margin-bottom: 1rem;
@@ -195,7 +193,33 @@ p {
 }
 
 .footer-link:hover {
-  color: #7dc7cb;
+  color: #042729;
+}
+
+.footer-primary .footer-logo {
+  max-height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-primary h5 {
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
+.footer-primary p {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.footer-primary .footer-link {
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+.footer-primary ul {
+  margin-bottom: 0.5rem;
 }
 
 

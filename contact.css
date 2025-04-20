@@ -56,6 +56,21 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
 
+/* ---------------- Navbar Main ---------------- */
+.navbar-main {
+    background: #fff;
+    border-bottom: 2px solid #7dc7cb;
+  }
+  .navbar-main .navbar-brand,
+  .navbar-main .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+  }
+  .navbar-main .nav-link:hover,
+  .navbar-main .nav-link.active {
+    color: #7dc7cb !important;
+  }
+
 /* Custom Teal Background */
 .bg-teal {
     background-color: #7dc7cb;
@@ -77,16 +92,19 @@
     font-weight: 600;
     margin-bottom: 1rem;
   }
-  /* Custom Button Styling */
-.btn-primary {
-    background-color: #7dc7cb; /* Custom blue */
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    border-color: #0056b3;
-  }
+
+/* Custom Button Styling */
+button.btn-primary {
+    background-color: #042729 !important; /* Force the background color */
+    border-color: #007bff !important; /* Force the border color */
+}
+
+button.btn-primary:hover {
+    background-color: #7dc7cb !important; /* Force hover background color */
+    border-color: #0056b3 !important; /* Force hover border color */
+}
+
+
   
   /* Custom Card Styling */
   .card {

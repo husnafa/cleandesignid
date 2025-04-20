@@ -1,6 +1,21 @@
+/* ---------------- Navbar Main ---------------- */
+.navbar-main {
+    background: #fff;
+    border-bottom: 2px solid #7dc7cb;
+  }
+  .navbar-main .navbar-brand,
+  .navbar-main .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+  }
+  .navbar-main .nav-link:hover,
+  .navbar-main .nav-link.active {
+    color: #7dc7cb !important;
+  }
+
 /* Custom Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .hero {
@@ -73,15 +88,66 @@ body {
   .service-card .card-text {
     color: #333;
   }
-  .btn-black {
-    background-color: #ae3737;
-    color: #fff;
+  
+  /* Hero Section */
+  .hero {
+      background: linear-gradient(to right, #40adb3, #7dc7cb); /* Dark base */
+      color: #ffffff;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(
+          60deg,
+          #0d6165 0%,
+          #40adb3 50%,
+          #7dc7cb 100%
+      );
+      animation: slide 3s linear infinite;
+      pointer-events: none;
+  }
+  
+  @keyframes slide {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(100%);
+      }
+  }
+  
+  .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 20px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .hero p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      margin-bottom: 30px;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .btn-theme-blue {
+    background-color: #042729; /* Change this to the color you prefer */
+    color: white;
     border: none;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-black:hover {
-    background-color: #7dc7cb;
-    color: #000;
-  }
-  
+}
+
+.btn-theme-blue:hover {
+    background-color: #5ba8a2; /* Adjust the hover color if needed */
+    color: white;
+}
