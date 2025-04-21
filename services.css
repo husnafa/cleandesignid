@@ -13,6 +13,12 @@
     color: #7dc7cb !important;
   }
 
+  .nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 15px;
+  }
+
 /* Custom Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,18 +42,6 @@ body {
   .cta .btn-light:hover {
     background-color: #7dc7cb;
     color: #ffffff;
-  }
-  
-  footer {
-    background-color: #000;
-  }
-  
-  footer a {
-    color: #ffffff;
-  }
-  
-  footer a:hover {
-    color: #7dc7cb;
   }
   
   .card-body {
@@ -150,4 +144,58 @@ body {
 .btn-theme-blue:hover {
     background-color: #5ba8a2; /* Adjust the hover color if needed */
     color: white;
+}
+
+/* ---------------- Footer Primary ---------------- */
+.footer-primary {
+  background: #7dc7cb;
+  padding: 1rem 0; /* Reduced padding to make the footer height smaller (50% smaller) */
+}
+
+.footer-primary h5 {
+  color: #000000;
+  margin-bottom: 0.2rem;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin: 0.25rem 0;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #042729;
+}
+
+.footer-primary .footer-logo {
+  max-height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-primary h5 {
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
+.footer-primary p {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.footer-primary .footer-link {
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+.footer-primary ul {
+  margin-bottom: 0.5rem;
 }

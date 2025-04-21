@@ -12,6 +12,10 @@
   border-color: #7dc7cb;
 }
 
+.btn-outline-custom-teal.btn-lg {
+  font-size: 2rem;
+}
+
 /* ---------------- Base & Typography ---------------- */
 body {
   margin: 0;
@@ -43,15 +47,22 @@ p {
   color: #7dc7cb !important;
 }
 
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 15px;
+}
+
+
 /* ---------------- Hero Homepage ---------------- */
 .hero-homepage {
   background: #f0f2f5;
 }
 .hero-homepage h1 {
-  font-size: 2.75rem;
+  font-size: 3.5rem;
 }
 .hero-homepage p {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 .btn-hero {
   background: #7dc7cb;
@@ -83,6 +94,18 @@ p {
   color: #555;
   margin-bottom: 1rem;
 }
+  .services-overview h2 {
+    font-size: 3rem;
+  }
+
+  .services-overview .card-title {
+    font-size: 2rem;
+  }
+
+  .services-overview .card-text {
+    font-size: 1.5rem;
+  }
+
 .btn-web,
 .btn-seo,
 .btn-marketing {
@@ -94,18 +117,25 @@ p {
 }
 .btn-web {
   background: #7dc7cb;
+  font-size: 1.25rem; /* You can change this value */
+  padding: 0.6rem 1.2rem; /* Optional: adjust button size */
 }
+
 .btn-web:hover {
   background: #495be6;
 }
 .btn-seo {
   background:  #7dc7cb;
+  font-size: 1.25rem; /* You can change this value */
+  padding: 0.6rem 1.2rem; /* Optional: adjust button size */
 }
 .btn-seo:hover {
   background: #495be6;
 }
 .btn-marketing {
   background:  #7dc7cb;
+  font-size: 1.25rem; /* You can change this value */
+  padding: 0.6rem 1.2rem; /* Optional: adjust button size */
 }
 .btn-marketing:hover {
   background: #495be6;
@@ -130,6 +160,7 @@ p {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   transition: background 0.3s;
+  font-size: 1.2rem;
 }
 .btn-about:hover {
   background:#495be6;
@@ -176,11 +207,11 @@ p {
 
 .footer-primary h5 {
   color: #000000;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.2rem;
 }
 
 .footer-logo {
-  width: 80px;
+  width: 60px;
   margin-bottom: 1rem;
 }
 
@@ -231,7 +262,7 @@ p {
 
 .hero-homepage {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh !important;
   background: url('design.jpg') no-repeat center center / cover;
   color: white;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
@@ -280,4 +311,64 @@ p {
 .hero-text p,
 .hero-text a {
   color: white !important;
+}
+
+.bi{font-size: 1.5rem;}
+
+/* Responsive Font Sizes */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .hero-homepage p,
+  .services-overview .card-text,
+  .btn-outline-custom-teal.btn-lg,
+  .btn-web,
+  .btn-seo,
+  .btn-marketing {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero-homepage p,
+  .services-overview .card-text,
+  .btn-outline-custom-teal.btn-lg,
+  .btn-web,
+  .btn-seo,
+  .btn-marketing {
+    font-size: 1.1rem;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .hero-homepage p,
+  .services-overview .card-text,
+  .btn-outline-custom-teal.btn-lg,
+  .btn-web,
+  .btn-seo,
+  .btn-marketing {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
 }
