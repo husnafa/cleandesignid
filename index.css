@@ -233,7 +233,7 @@ p {
 }
 
 .footer-primary h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0rem;
 }
 
@@ -243,7 +243,7 @@ p {
 }
 
 .footer-primary .footer-link {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   margin-right: 0.5rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -253,6 +253,12 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.policy-link {
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+}
+
+.bi{font-size: 1.75rem;}
 
 /* -------- Override Bootstrap Color Utils -------- */
 .bg-white, .bg-light, .btn-primary, .btn-success, .btn-dark {
@@ -312,8 +318,6 @@ p {
 .hero-text a {
   color: white !important;
 }
-
-.bi{font-size: 1.5rem;}
 
 /* Responsive Font Sizes */
 @media (max-width: 992px) {

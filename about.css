@@ -33,8 +33,8 @@ body {
 
 /* Fade + scale animation for paragraph */
 .animated-paragraph {
-  opacity: 0;
-  transform: scale(0.95);
+  opacity: 20;
+  transform: scale(1.5);
   animation: fadeScaleIn 1.5s ease-out forwards;
   animation-delay: 0.5s;
 }
@@ -46,24 +46,19 @@ body {
   }
 }
 
-/* Navbar */
-.navbar {
-  background-color: #ffffff;
+/* ---------------- Navbar Main ---------------- */
+.navbar-main {
+  background: #fff;
+  border-bottom: 2px solid #7dc7cb;
 }
-
-.navbar-brand {
-  color: #000000 !important;
-}
-
-.navbar-nav .nav-link {
-  color: #000000 !important;
+.navbar-main .navbar-brand,
+.navbar-main .nav-link {
+  color: #000 !important;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #7dc7cb !important; /* Light blue hover effect */
+.navbar-main .nav-link:hover,
+.navbar-main .nav-link.active {
+  color: #7dc7cb !important;
 }
 
 .nav-link {
@@ -72,23 +67,84 @@ body {
   padding: 20px 15px;
 }
 
-
-/* About Header Section */
-.bg-light {
-  background-color: #f7f7f7 !important;
+.about-header {
+  background: url('header.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 40vh;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
+
+.about-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* darkens the image for better text contrast */
+  z-index: 1;
+}
+
+.about-header .container {
+  z-index: 2;
+  position: relative;
+}
+
+.running-text {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.animated-paragraph {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .running-text {
+    font-size: 2.5rem;
+  }
+
+  .animated-paragraph {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* About Content Section */
 .text-block h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #17202A;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  text-align: center; 
 }
 
 .text-block p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #17202A;
+}
+
+/* About Team */
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
 }
 
 /* CTA Button */
@@ -120,7 +176,7 @@ body {
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
   background: #7dc7cb;
-  padding: 1rem 0; /* Reduced padding to make the footer height smaller (50% smaller) */
+  padding: 1rem 0; 
 }
 
 .footer-primary h5 {
@@ -151,7 +207,7 @@ body {
 }
 
 .footer-primary h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0rem;
 }
 
@@ -161,7 +217,7 @@ body {
 }
 
 .footer-primary .footer-link {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   margin-right: 0.5rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -170,6 +226,12 @@ body {
 .footer-primary ul {
   margin-bottom: 0.5rem;
 }
+
+.policy-link {
+  font-size: 1.1rem; /* adjust as needed */
+}
+
+.bi{font-size: 1.75rem;}
 
 
 /* Image Styles */
