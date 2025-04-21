@@ -1,23 +1,23 @@
 /* ---------------- Navbar Main ---------------- */
 .navbar-main {
-    background: #fff;
-    border-bottom: 2px solid #7dc7cb;
-  }
-  .navbar-main .navbar-brand,
-  .navbar-main .nav-link {
-    color: #000 !important;
-    font-weight: 500;
-  }
-  .navbar-main .nav-link:hover,
-  .navbar-main .nav-link.active {
-    color: #7dc7cb !important;
-  }
+  background: #fff;
+  border-bottom: 2px solid #7dc7cb;
+}
+.navbar-main .navbar-brand,
+.navbar-main .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+.navbar-main .nav-link:hover,
+.navbar-main .nav-link.active {
+  color: #7dc7cb !important;
+}
 
-  .nav-link {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px 15px;
-  }
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 15px;
+}
 
 /* Custom Styles */
 body {
@@ -25,12 +25,12 @@ body {
   }
   
   .hero {
-    background-color: #7dc7cb; /* Set hero section color to #7dc7cb */
+    background-color: #7dc7cb; 
     color: #fff;
   }
   
-  .cta {
-    background-color: #7dc7cb;
+  .cta-section {
+    background-color: #ffffff; 
   }
   
   .cta .btn-light {
@@ -83,7 +83,7 @@ body {
     color: #333;
   }
   
-  /* Hero Section */
+  /* Hero header Section */
   .hero {
       background: linear-gradient(to right, #40adb3, #7dc7cb); /* Dark base */
       color: #ffffff;
@@ -91,6 +91,9 @@ body {
       text-align: center;
       position: relative;
       overflow: hidden;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      min-height: 40vh;
   }
   
   .hero::before {
@@ -119,25 +122,27 @@ body {
       }
   }
   
-  .hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 20px;
-      font-weight: 700;
-      position: relative;
-      z-index: 1;
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    padding: 2rem 1rem;
+    text-align: center;
   }
   
   .hero p {
       font-size: clamp(1rem, 3vw, 1.2rem);
       margin-bottom: 30px;
+      margin-top: 50px;
       line-height: 1.6;
       position: relative;
       z-index: 1;
   }
   
   .btn-theme-blue {
-    background-color: #042729; /* Change this to the color you prefer */
-    color: white;
+    background-color: #ffffff; /* Change this to the color you prefer */
+    color: rgb(0, 0, 0);
     border: none;
 }
 
@@ -149,7 +154,7 @@ body {
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
   background: #7dc7cb;
-  padding: 1rem 0; /* Reduced padding to make the footer height smaller (50% smaller) */
+  margin-top: 50px;
 }
 
 .footer-primary h5 {
@@ -180,7 +185,7 @@ body {
 }
 
 .footer-primary h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0rem;
 }
 
@@ -190,7 +195,7 @@ body {
 }
 
 .footer-primary .footer-link {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   margin-right: 0.5rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -199,3 +204,9 @@ body {
 .footer-primary ul {
   margin-bottom: 0.5rem;
 }
+
+.policy-link {
+  font-size: 1.1rem;;
+}
+
+.bi{font-size: 1.75rem;}
