@@ -62,28 +62,96 @@ body {
     background-color: #7dc7cb;
   }
   
+/* Service Card */
+.section-title {
+  font-size: 2.5rem; 
+  font-weight: 700;  
+  line-height: 1.2;
+  padding-bottom: 2rem;  
+}
 
-  .service-card {
-    border: 2px solid #f0f0f0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 25px rgba(125, 199, 203, 0.4);
-    border-color: #7dc7cb;
-  }
-  
-  .service-card .card-title {
-    color: #7dc7cb;
-    font-weight: 600;
-  }
-  
-  .service-card .card-text {
-    color: #333;
-  }
-  
-  /* Hero header Section */
+.service-card {
+  border: 2px solid #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #7dc7cb66;
+  border-color: #7dc7cb;
+}
+
+.service-card .card-title {
+  color: #7dc7cb;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.service-card .card-text {
+  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text-content {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-card {
+  border-radius: 0.75rem;
+}
+.service-card .card-body {
+  padding: 1.5rem;
+}
+.service-card .card-title {
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.service-card .card-text {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Call-to-action button */
+.cta-btn {
+  background-color: #7dc7cb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.cta-btn:hover {
+  background-color: #00aea2;
+  transform: translateY(-2px);
+}
+
+
+/* Hero header Section */
+
+.hero-title {
+  font-size: 5rem;       
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;     
+  color: #ffffff;           
+}
+
   .hero {
       background: linear-gradient(to right, #40adb3, #7dc7cb); /* Dark base */
       color: #ffffff;
@@ -155,11 +223,16 @@ body {
 .footer-primary {
   background: #7dc7cb;
   margin-top: 50px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-primary h5 {
   color: #000000;
   margin-bottom: 0.2rem;
+  font-size: 2rem;
+  margin-bottom: 0rem;
 }
 
 .footer-logo {
@@ -184,11 +257,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.footer-primary h5 {
-  font-size: 1.5rem;
-  margin-bottom: 0rem;
-}
-
 .footer-primary p {
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -210,3 +278,10 @@ body {
 }
 
 .bi{font-size: 1.75rem;}
+
+/* Ready Contact */
+.cta-section {
+  background-color: #042729;
+  padding-top: 8rem;   /* Increased top padding */
+  padding-bottom: 8rem; /* Increased bottom padding */
+}
