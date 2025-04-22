@@ -2,11 +2,28 @@
 .hero-section {
     position: relative;
     background: url('team.jpg') no-repeat center center / cover;
-    min-height: 60vh; /* Adjust this depending on the height you want */
+    min-height:40vh; 
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Optional, adds shadow to text for readability */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
   
+  .hero-section h1 {
+    font-size: 3.5rem; 
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
   .hero-overlay {
     position: absolute;
     top: 0;
@@ -21,17 +38,14 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 100px 15px; /* Adjust for spacing around the content */
+    padding: 50px 15px;
+ 
   }
-  
-  .hero-content h1 {
-    font-size: 2.5rem; /* Adjust size */
-    font-weight: bold;
-  }
-  
-  .hero-content p {
-    font-size: 1.125rem;
-    margin-bottom: 20px;
+
+  .hero-section .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
   }
   
   .hero-content .btn {
@@ -55,7 +69,7 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
-
+  
 /* ---------------- Navbar Main ---------------- */
 .navbar-main {
     background: #fff;
@@ -102,13 +116,12 @@
 /* Custom Button Styling */
 button.btn-primary {
     background-color: #042729 !important; /* Force the background color */
-    border-color: #007bff !important; /* Force the border color */
 }
 
 button.btn-primary:hover {
     background-color: #7dc7cb !important; /* Force hover background color */
-    border-color: #0056b3 !important; /* Force hover border color */
 }
+
   /* Custom Card Styling */
   .card {
     border-radius: 12px; /* Rounded corners */
@@ -125,7 +138,7 @@ button.btn-primary:hover {
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
   background: #7dc7cb;
-  padding: 1rem 0; /* Reduced padding to make the footer height smaller (50% smaller) */
+  padding: 1rem 0; /
 }
 
 .footer-primary h5 {
@@ -156,7 +169,7 @@ button.btn-primary:hover {
 }
 
 .footer-primary h5 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-bottom: 0rem;
 }
 
@@ -166,7 +179,7 @@ button.btn-primary:hover {
 }
 
 .footer-primary .footer-link {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   margin-right: 0.5rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -175,3 +188,9 @@ button.btn-primary:hover {
 .footer-primary ul {
   margin-bottom: 0.5rem;
 }
+
+.policy-link {
+  font-size: 1.1rem;;
+}
+
+.bi{font-size: 1.75rem;}

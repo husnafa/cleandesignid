@@ -1,6 +1,6 @@
 /* ---------------- Navbar Main ---------------- */
 .navbar-main {
-  background: #fff;
+  background-color: #fff;
   border-bottom: 2px solid #7dc7cb;
 }
 .navbar-main .navbar-brand,
@@ -17,6 +17,10 @@
   font-size: 20px;
   font-weight: 500;
   padding: 20px 15px;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
 }
 
 /* Custom Styles */
@@ -142,14 +146,14 @@ body {
 /* Hero header Section */
 
 .hero-title {
-  font-size: 5rem;       
+  font-size: 4rem;       
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;     
-  color: #ffffff;           
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
 }
 
   .hero {
@@ -222,17 +226,13 @@ body {
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
   background: #7dc7cb;
-  margin-top: 50px;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 1rem 0;
+  margin-top: 3rem;
 }
 
 .footer-primary h5 {
   color: #000000;
   margin-bottom: 0.2rem;
-  font-size: 2rem;
-  margin-bottom: 0rem;
 }
 
 .footer-logo {
@@ -255,6 +255,11 @@ body {
 .footer-primary .footer-logo {
   max-height: 20px;
   margin-bottom: 0.5rem;
+}
+
+.footer-primary h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .footer-primary p {
@@ -284,4 +289,23 @@ body {
   background-color: #042729;
   padding-top: 8rem;   /* Increased top padding */
   padding-bottom: 8rem; /* Increased bottom padding */
+}
+.cta-section {
+  background-color: #042729;
+  padding: 6rem 0;
+}
+
+.cta-section h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1.5rem;
+}
+
+.cta-btn-custom {
+  font-size: 1.5rem;     
+  padding: 1rem 2.5rem;   
+  border-radius: 8px;     
 }

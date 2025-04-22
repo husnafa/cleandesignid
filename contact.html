@@ -4,277 +4,195 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Clean Design Indonesia</title>
+  <meta name="description" content="Clean Design Indonesia offers web design, SEO, and digital marketing services built for small businesses. Boost your brand, attract more visitors, and grow online.">
+  <meta name="keywords" content="professional web design, SEO Indonesia, small business marketing, responsive websites, brand identity design, website maintenance, digital growth Indonesia, free consultation web design, Clean Design ID">
+  <meta name="author" content="Clean Design Indonesia">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="contact.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-main shadow-sm">
-  <div class="container">
-    <img src="logo.jpg" alt="Logo" style="height: 30px;"></a>
-    <a class="navbar-brand fw-bold" href="index.html">Clean Design Indonesia</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<nav class="navbar navbar-expand-lg navbar-main sticky-top shadow-sm">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand d-flex align-items-center mb-0" href="index.html">
+      <img src="logo.jpg" alt="Logo" style="height: 50px; width: 40px;" class="me-2">
+      <span class="fw-bold fs-10">Clean Design Indonesia</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+    <!-- Collapsible nav links (must be inside nav) -->
+    <div class="collapse navbar-collapse mt-2" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-  <!-- JavaScript for active navbar link -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll('.navbar-nav .nav-link');
-      const currentPage = location.pathname.split("/").pop();
-
-      links.forEach(link => {
-        const linkPage = link.getAttribute("href");
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    });
-  </script>
-</body>
-
- <!-- AOS Animate on Scroll -->
- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
- <!-- Custom Icon Color -->
- <style>
-  .bi {
-    color: #7dc7cb !important;
-  }
-</style>
-</head>
 
 <!-- Hero Section -->
 <section class="hero-section">
- <div class="hero-overlay"></div>
- <div class="container hero-content" data-aos="zoom-in" data-aos-delay="200">
-   <h1>Reach Out to CleanDesign Indonesia</h1>
-   <p>Let’s create something extraordinary together. Contact us today to start your project!</p>
-   <a href="#contact-form" class="btn btn-lg btn-light mt-3" title="Contact Us">Reach Out Today</a>
- </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content" data-aos="zoom-in" data-aos-delay="200">
+    <h1>Contact CleanDesign Indonesia</h1>
+    <p class="hero-content">Let’s create something extraordinary together. Contact us today to start your project!</p>
+    <a href="#contact-form" class="btn btn-lg custom-btn">Reach Out Today</a>
+  </div>
 </section>
 
-<!-- Contact Information Section -->
+<!-- Contact Information -->
 <section class="contact-info py-5">
- <div class="container">
-   <div class="row g-4">
-     <!-- Address Card -->
-     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-       <div class="card contact-card h-100 text-center shadow-sm p-3 border-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Find us on Google Maps">
-         <i class="bi bi-geo-alt-fill fs-1 text-primary mb-3"></i>
-         <h5>Visit Us</h5>
-         <p class="mb-0">Jakarta<br>Indonesia</p>
-       </div>
-     </div>
-
-     <!-- Phone Card -->
-     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-       <a href="tel:+6281234567890" class="text-decoration-none text-dark">
-         <div class="card contact-card h-100 text-center shadow-sm p-3 border-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call us">
-           <i class="bi bi-telephone-fill fs-1 text-primary mb-3"></i>
-           <h5>Call Us</h5>
-           <p class="mb-0">+62 812-3456-7890</p>
-         </div>
-       </a>
-     </div>
-
-     <!-- Email Card -->
-     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-       <a href="mailto:cleandesignid@gmail.com" class="text-decoration-none text-dark">
-         <div class="card contact-card h-100 text-center shadow-sm p-3 border-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to email us">
-           <i class="bi bi-envelope-fill fs-1 text-primary mb-3"></i>
-           <h5>Email Us</h5>
-           <p class="mb-0">cleandesignid@gmail.com</p>
-         </div>
-       </a>
-     </div>
-
-     <!-- Hours Card -->
-     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-       <div class="card contact-card h-100 text-center shadow-sm p-3 border-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Our available hours">
-         <i class="bi bi-clock-fill fs-1 text-primary mb-3"></i>
-         <h5>Working Hours</h5>
-         <p class="mb-0">Mon–Fri: 9:00 AM – 5:00 PM</p>
-       </div>
-     </div>
-   </div>
- </div>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="card contact-card h-100 text-center shadow-sm p-3 border-0">
+          <i class="bi bi-geo-alt-fill fs-1 text-primary mb-3"></i>
+          <h5>Visit Us</h5>
+          <p class="mb-0">Jakarta<br>Indonesia</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <a href="tel:+6281234567890" class="text-decoration-none text-dark">
+          <div class="card contact-card h-100 text-center shadow-sm p-3 border-0">
+            <i class="bi bi-telephone-fill fs-1 text-primary mb-3"></i>
+            <h5>Call Us</h5>
+            <p class="mb-0">+62 812-3456-7890</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <a href="mailto:cleandesignid@gmail.com" class="text-decoration-none text-dark">
+          <div class="card contact-card h-100 text-center shadow-sm p-3 border-0">
+            <i class="bi bi-envelope-fill fs-1 text-primary mb-3"></i>
+            <h5>Email Us</h5>
+            <p class="mb-0">cleandesignid@gmail.com</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card contact-card h-100 text-center shadow-sm p-3 border-0">
+          <i class="bi bi-clock-fill fs-1 text-primary mb-3"></i>
+          <h5>Working Hours</h5>
+          <p class="mb-0">Mon–Fri: 9:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<!-- Tooltip Activation -->
-<script>
- const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
- const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-   return new bootstrap.Tooltip(tooltipTriggerEl);
- });
-</script>
-
-<!-- AOS Animate on Scroll JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
- AOS.init({
-   once: true,
-   duration: 800,
- });
-</script>
-
-</body>
-</html>
-
-
-<!-- Contact Form Section -->
+<!-- Contact Form -->
 <section class="contact-form-section py-5 bg-light" id="contact-form">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8">
-        <!-- Card Start -->
-        <div class="card shadow-lg border-0 rounded-4">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="card shadow-lg border-0 rounded-4 h-100">
           <div class="card-body p-5">
             <h3 class="card-title text-center fw-bold mb-3">Get in Touch</h3>
-            <p class="card-text text-center text-muted mb-4">
-              Fill out the form below, and we'll get back to you as soon as possible.
-            </p>
-
+            <p class="card-text text-center text-muted mb-4">Fill out the form below, and we'll get back to you as soon as possible.</p>
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-              <!-- Access Key -->
               <input type="hidden" name="access_key" value="6058b768-9186-4d8d-8fa5-ced446829fca">
               <input type="hidden" name="subject" value="New Contact Form Submission">
-
-              <!-- Name Field -->
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Your full name" required autocomplete="name">
+                <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Your full name" required>
                 <label for="name">Name <span class="text-danger">*</span></label>
               </div>
-
-              <!-- Email Field -->
               <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="Your email address" required autocomplete="email">
+                <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="Your email address" required>
                 <label for="email">Email <span class="text-danger">*</span></label>
               </div>
-
-              <!-- Phone Field -->
               <div class="form-floating mb-3">
-                <input type="tel" class="form-control rounded-3" id="phone" name="phone" placeholder="Your phone number" required autocomplete="tel">
+                <input type="tel" class="form-control rounded-3" id="phone" name="phone" placeholder="Your phone number" required>
                 <label for="phone">Phone <span class="text-danger">*</span></label>
               </div>
-
-              <!-- Message Field -->
               <div class="form-floating mb-4">
                 <textarea class="form-control rounded-3" id="message" name="message" placeholder="Tell us how we can help you" style="height: 150px;" required></textarea>
                 <label for="message">Message <span class="text-danger">*</span></label>
               </div>
-
-              <!-- Submit Button -->
               <div class="d-grid">
-                <button type="submit" class="btn btn-primary btn-lg rounded-3 shadow-sm">
-                  Send Message
-                </button>
+                <button type="submit" class="btn btn-primary btn-lg rounded-3 shadow-sm">Send Message</button>
               </div>
             </form>
           </div>
         </div>
-        <!-- Card End -->
+      </div>
+      <div class="col-lg-6">
+        <div class="h-100 w-100 rounded-4 overflow-hidden shadow-sm" style="min-height: 500px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.610994292326!2d106.6901804!3d-6.0393368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a05d6a6ba90a1%3A0xc66115005599c52!2sTokyo%20Riverside%20Apartment!5e0!3m2!1sen!2sid!4v1713789708147!5m2!1sen!2sid"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Footer Primary -->
-<footer class="footer-primary" style="padding: 0.5rem 0; font-size: 0.75rem;">
-  <div class="container text-center text-md-left" style="padding-top: 0.3rem; padding-bottom: 0.3rem;">
+<!-- Footer -->
+<footer class="footer-primary" style="padding: 1rem 0; font-size: 0.75rem;">
+  <div class="container text-center text-md-left">
     <div class="row">
       <div class="col-12 col-lg-3 mt-md-0 mt-3">
-        <img src="logo.jpg" alt="Clean Design Logo" class="footer-logo mb-1" style="max-height: 60px;">
-        <h5 class="fw-bold" style="font-size: 1rem; margin-bottom: 0.3rem;">CLEAN DESIGN INDONESIA</h5>
-        <p style="margin-bottom: 0.3rem; line-height: 1.5;">Bringing you the best in web design and development.</p>
+        <img src="logo.jpg" alt="Clean Design Logo" class="footer-logo mb-3" style="max-height: 50px;">
+        <h5 class="fw-bold">CLEAN DESIGN INDONESIA</h5>
+        <p>Bringing you the best in web design and development.</p>
       </div>
       <div class="col-md-8 col-lg-6 mb-md-0 mb-3">
-        <h5 class="fw-bold" >Follow Us</h5>
+        <h5 class="fw-bold">Follow Us</h5>
         <ul class="list-unstyled d-flex flex-wrap justify-content-between align-items-center">
-          
-             <!-- Social Media Links -->
-             <li class="col-6 col-md-4">
-              <a href="https://www.facebook.com/CleanDesignUK" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Follow Clean Design UK on Facebook for Web Design Tips, SEO Strategies, and Small Business Advice">
-                  <i class="bi bi-facebook"></i> Facebook
-              </a>
-          </li>
-          <li class="col-6 col-md-4">
-              <a href="https://www.youtube.com/@CleanDesignUK" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Subscribe to Clean Design UK's YouTube Channel for In-Depth Web Design Tutorials, SEO Optimization Tips, and Digital Marketing Insights">
-                  <i class="bi  bi-youtube"></i> YouTube
-              </a>
-          </li>
-          <li class="col-6 col-md-4">
-              <a href="http://linkedin.com/in/jesseross001" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Connect with Jesse Ross on LinkedIn - Professional Website Developer and SEO Specialist Helping Small Businesses Thrive">
-                  <i class="bi bi-linkedin"></i> LinkedIn
-              </a>
-          </li>
-          <li class="col-6 col-md-4">
-              <a href="https://www.instagram.com/cleandesign_uk" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Follow Clean Design UK on Instagram for Visual Web Design Inspiration, Client Projects, and Behind-the-Scenes Content">
-                  <i class="bi bi-instagram"></i> Instagram
-              </a>
-          </li>
-          <li class="col-6 col-md-4">
-              <a href="https://maps.app.goo.gl/T6VnJcv8yhLTeay86" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Check Out Clean Design UK on Google Business - Read Customer Reviews and Get Directions to Our Location">
-                  <i class="bi bi-google"></i> Business
-              </a>
-          </li>
-          <li class="col-6 col-md-4">
-              <a href="mailto:cleandesign.uk@gmail.com" 
-                 class="footer-link" 
-                 target="_blank" 
-                 title="Email Clean Design UK - Start Your Free Consultation for Web Design, SEO Services, and Digital Marketing Solutions">
-                  <i class="bi bi-envelope"></i> Email Us
-              </a>
-          </li>
-      </ul>
-  </div>
-
-<div class="col-md-4 col-lg-2 mb-md-0 mb-3">
-    <h5 class="fw-bold">Policies</h5>
-    <ul class="list-unstyled" style="margin-bottom: 0;">
-        <li><a href="#" class="footer-link" style="font-size: 1rem;">Privacy Policy</a></li>
-        <li><a href="#" class="footer-link" style="font-size: 1rem;">Cookie Policy</a></li>
-          </ul>
-        </div>
+          <li class="col-6 col-md-4"><a href="https://www.facebook.com/CleanDesignUK" class="footer-link" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+          <li class="col-6 col-md-4"><a href="https://www.youtube.com/@CleanDesignUK" class="footer-link" target="_blank"><i class="bi bi-youtube"></i> YouTube</a></li>
+          <li class="col-6 col-md-4"><a href="http://linkedin.com/in/jesseross001" class="footer-link" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+          <li class="col-6 col-md-4"><a href="https://www.instagram.com/cleandesign_uk" class="footer-link" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+          <li class="col-6 col-md-4"><a href="https://maps.app.goo.gl/T6VnJcv8yhLTeay86" class="footer-link" target="_blank"><i class="bi bi-google"></i> Business</a></li>
+          <li class="col-6 col-md-4"><a href="mailto:cleandesign.uk@gmail.com" class="footer-link" target="_blank"><i class="bi bi-envelope"></i> Email Us</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-3 pb-3 text-start">
+        <h5 class="fw-bold pb-4">Policies</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="footer-link policy-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link policy-link">Cookie Policy</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 800 });
+
+  // Navbar active link
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.navbar-nav .nav-link');
+    const currentPage = location.pathname.split("/").pop();
+    links.forEach(link => {
+      const linkPage = link.getAttribute("href");
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+
+  // Bootstrap tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+
 </body>
 </html>
-
