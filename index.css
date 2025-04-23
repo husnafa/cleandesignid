@@ -95,8 +95,12 @@ p {
 }
 .service-card .card-text {
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.25rem !important;
+  text-align: center;
 }
+
   .services-overview h2 {
     font-size: 3rem;
   }
