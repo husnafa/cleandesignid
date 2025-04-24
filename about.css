@@ -2,6 +2,7 @@
 body {
   background-color: #ffffff;
   color: #17202A; /* Dark text color for readability */
+  margin: 0; /* Prevent default body margin */
 }
 
 /* Section background and text color */
@@ -9,6 +10,7 @@ body {
   background-color: #7dc7cb;
   color: rgb(2, 2, 2);
   overflow: hidden;
+  padding-bottom: 2rem; /* Added bottom padding to align with footer */
 }
 
 /* Marquee effect for h1 */
@@ -51,18 +53,20 @@ body {
   background-color: #fff;
   border-bottom: 2px solid #7dc7cb;
 }
+
 .navbar-main .navbar-brand,
 .navbar-main .nav-link {
   color: #000 !important;
   font-weight: 500;
 }
+
 .navbar-main .nav-link:hover,
 .navbar-main .nav-link.active {
   color: #7dc7cb !important;
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 500;
   padding: 20px 15px;
 }
@@ -124,77 +128,10 @@ body {
 }
 
 
-/* About Content Section */
-.text-block h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #17202A;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.text-block p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #17202A;
-}
-
-/* Call-to-Action Button */
-/* Call-to-Action Button */
-.btn-cta {
-  background-color: #7dc7cb;
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  max-width: 100%;
-  width: 15rem; 
-}
-
-
-.btn-cta:hover {
-  background-color: #58a0b6;
-  transform: scale(1.05);
-}
-/* Optional: Ensure text doesn't go full width on large screens */
-.text-block {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.text-indent-md {
-  padding-left: 2rem;
-}
-@media (max-width: 767.98px) {
-  .text-indent-md {
-    padding-left: 0;
-  }
-}
-
-/* Responsive Images */
-.hover-image-wrapper img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-/* Team Section */
-.team-img {
-  width: 40%;
-  height: auto;
-}
-
 /* ---------------- Footer Primary ---------------- */
 .footer-primary {
   background: #7dc7cb;
-  padding: 1rem 0; 
+  padding: 1rem 0; /
 }
 
 .footer-primary h5 {
@@ -246,20 +183,40 @@ body {
 }
 
 .policy-link {
-  font-size: 1.1rem; /* adjust as needed */
+  font-size: 1.1rem;;
 }
 
 .bi{font-size: 1.75rem;}
 
-
-/* Image Styles */
-.hover-image-wrapper {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Ready Contact */
+.cta-section {
+  background-color: #042729;
+  padding-top: 8rem;   /* Increased top padding */
+  padding-bottom: 8rem; /* Increased bottom padding */
+}
+.cta-section {
+  background-color: #042729;
+  padding: 6rem 0;
 }
 
+.cta-section h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1.5rem;
+}
+
+.cta-btn-custom {
+  font-size: 1.5rem;     
+  padding: 1rem 2.5rem;   
+  border-radius: 8px;     
+}
+
+
+/* Content Section */
+/* Hover Image Effect */
 .hover-image {
   transition: transform 0.5s ease;
   transform: scale(1);
@@ -269,24 +226,68 @@ body {
   transform: scale(1.1);
 }
 
-/* Scale image to 80% width */
-.small-image {
-  max-width: 70%;
-  height: auto;
+/* Text Block Styling */
+.text-block h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #17202A;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
-/* Scale image to 70% width */
-.medium-image {
-  max-width: 90%;
-  height: auto;
+.text-block p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #17202A;
+  margin-bottom: 1rem;
 }
 
-.image-right-padding {
-  padding-right: 100px;
+/* Responsive Typography for Tablets and Up */
+@media (min-width: 768px) {
+  .text-block h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-block p {
+    font-size: 1.2rem;
+  }
 }
 
-/* Section padding and alignment */
-.py-5 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* Call-to-Action Button */
+.btn-cta {
+  background-color: #7dc7cb !important;
+  color: white;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 50px !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.btn-cta:hover {
+  background-color: #58a0b6 !important;
+  transform: scale(1.05);
+}
+
+/* Mobile Tweaks */
+@media (max-width: 767px) {
+  .text-block {
+    padding: 0 1rem;
+  }
+
+  .text-block h2,
+  .text-block p {
+    text-align: center;
+  }
+
+  .ps-md-5 {
+    padding-left: 1rem !important;
+  }
 }

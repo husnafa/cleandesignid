@@ -36,35 +36,14 @@
       <!-- Collapsible nav links -->
       <div class="collapse navbar-collapse mt-2" id="navbarNav">
         <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
-  
     </div>
   </nav>
-  
-  <!-- JavaScript for active navbar link -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll('.navbar-nav .nav-link');
-      const currentPage = location.pathname.split("/").pop();
-
-      links.forEach(link => {
-        const linkPage = link.getAttribute("href");
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    });
-  </script>
-</body>
-</html>
-
 
 <!-- About Hero Header -->
 <section class="about-header text-center d-flex align-items-center py-6">
@@ -78,51 +57,50 @@
   </div>
 </section>
 
-    <!-- About Content -->
-    <section class="services-overview py-5">
-      <div class="container pt-3 pb-3">
 
-    <!-- Our Mission -->
-    <div class="row align-items-center mb-5">
-      <!-- Image first on mobile, second on desktop -->
-      <div class="col-md-6 order-1 order-md-2">
-        <div class="hover-image-wrapper">
-          <img src="our-mission.jpg" alt="Clean Design Team Working on Website" class="img-fluid rounded shadow hover-image w-100">
+  <!-- About Content -->
+  <section class="services-overview py-5">
+    <div class="container pt-3 pb-3">
+
+      <!-- Our Mission -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-1 order-md-2">
+          <div class="hover-image-wrapper">
+            <img src="our-mission.jpg" alt="Clean Design Team Working on Website" class="img-fluid rounded shadow hover-image w-100">
+          </div>
+        </div>
+        <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center text-block text-center text-md-start ps-md-5">
+          <h2 class="mb-3">Our Mission</h2>
+          <p>
+            At <strong>Clean Design Indonesia</strong>, we empower small businesses with high-performance web design, SEO services, and digital marketing strategies. 
+            Inspired by Clean Design UK, our mission is to provide modern, professional, and affordable solutions tailored to Indonesia’s growing market.
+            Clean Design Indonesia is your trusted partner in web design, SEO, and digital marketing.
+          </p>
+          <a href="#contact" class="btn btn-cta d-block mx-auto mx-md-0">Let's Build Your Dream Website!</a>
         </div>
       </div>
-      
-      <!-- Text second on mobile, first on desktop -->
-      <div class="col-md-6 order- order-md-1 d-flex flex-column text-block text-md-start justify-content-center text-center text-md-start ps-5">
-        <h2 class="mb-3">Our Mission</h2>
-        <p>
-          At <strong>Clean Design Indonesia</strong>, we empower small businesses with high-performance web design, SEO services, and digital marketing strategies. 
-          Inspired by Clean Design UK, our mission is to provide modern, professional, and affordable solutions tailored to Indonesia’s growing market. 
-          Clean Design Indonesia is your trusted partner in web design, SEO, and digital marketing. We specialize in creating responsive websites that not only look great but also perform exceptionally well in search engines.
-        </p>
-        <a href="#contact" class="btn btn-cta d-block mx-auto">Let's Build Your Dream Website!</a>
-      </div>
-    </div>
 
-    <!-- Who We Are -->
-    <div class="row align-items-center mb-5">
-      <!-- Image first on mobile, second on desktop -->
-      <div class="col-md-6 order-1 order-md-1">
-        <div class="hover-image-wrapper">
-          <img src="whowe-are.jpg" alt="Clean Design Indonesia Website Development Process" class="img-fluid rounded shadow hover-image w-100">
+      <!-- Who We Are -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-1">
+          <div class="hover-image-wrapper">
+            <img src="whowe-are.jpg" alt="Clean Design Indonesia Website Development Process" class="img-fluid rounded shadow hover-image w-100">
+          </div>
+        </div>
+        <div class="col-md-6 order-2 d-flex flex-column justify-content-center text-block text-center text-md-start ps-md-5">
+          <h2 class="mb-3">The Story Behind Us</h2>
+          <p>
+            We’re <strong>a passionate and experienced team</strong> of Indonesian web designers, developers, and SEO specialists focused on helping local businesses thrive online.
+            From startups to local services, we craft responsive websites and effective digital campaigns that drive real results.
+          </p>
+          <a href="#contact" class="btn btn-cta d-block mx-auto mx-md-0">Get in Touch</a>
         </div>
       </div>
-      <!-- Text second on mobile, first on desktop -->
-      <div class="col-md-6 order-2 order-md-2 d-flex flex-column justify-content-center text-block text-center text-md-start">
-        <h2 class="mb-3">The Story Behind Us</h2>
-        <p>
-          We’re <strong>a passionate and experienced team </strong> of Indonesian web designers, developers, and SEO specialists focused on helping local businesses thrive online. 
-          From startups to local services, we craft responsive websites and effective digital campaigns that drive real results. Our team is dedicated to helping small businesses thrive online with modern, professional, and affordable solutions tailored to Indonesia’s growing market.</p>
-        <a href="#contact" class="btn btn-cta d-block mx-auto">Get in Touch</a>
-      </div>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
+</body>
+</html>
 
 <!-- Team Section -->
 <section class="bg-light py-2 pt-1 pb-10">
@@ -158,7 +136,7 @@
 </section>
 
  <!-- Footer Primary -->
- <footer class="footer-primary" style="padding: 1rem 0; font-size: 0.75rem;">
+<footer class="footer-primary" style="padding: 1rem 0; font-size: 0.75rem;">
   <div class="container text-center text-md-left" style="padding-top: 0.3rem; padding-bottom: 0.3rem;">
     <div class="row">
       <div class="col-12 col-lg-3 mt-md-0 mt-3">
@@ -222,15 +200,12 @@
       </ul>
   </div>
 
-  <div class="col-md-4 col-lg-2 mb-md-0 mb-3 pb-3"> 
+  <div class="col-12 col-md-4 col-lg-3 mb-3 pb-3 text-start">
     <h5 class="fw-bold pb-4">Policies</h5>
     <ul class="list-unstyled mb-0">
       <li class="mb-2"><a href="#" class="footer-link policy-link">Privacy Policy</a></li>
       <li><a href="#" class="footer-link policy-link">Cookie Policy</a></li>
     </ul>
   </div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
